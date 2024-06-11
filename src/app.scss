@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'top-clancy';
+    src: url('../public/fonts/Palo\ Compressed\ Medium.otf') format('truetype');
+    
+  }
+  @font-face {
+    font-family: 'clancy';
+    src: url('../public/fonts/Clancy.ttf') format('truetype');
+    
+  }
+    
+  
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    font-family: 'top-clancy';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-family: "DM Sans", sans-serif;
+}
+body{
+    background-color: #231f20;
+    color: lightgrey;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    max-height: 100vh;
+    min-height: 50vh;
+    scroll-snap-align: center;
+}

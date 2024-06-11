@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  background-image: url('../../../public/onrefni.jpg');
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  z-index: 1;
+
+  .centered-image {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+  .description-out{
+    display: flex;
+    justify-content: center;
+    bottom: 5rem;
+    position: absolute;
+    z-index: 2;
+    flex-direction: row;
+    text-align: center;
+    h1{
+      font-family: 'clancy';
+      font-size:2em;
+    }
+    label{
+      font-family: 'clancy';
+      font-size:1em;
+    }
+
+  }
+  .button-out{
+    display: flex;
+    justify-content: center;
+    bottom: 2rem;
+    position: absolute;
+    button{
+      background-color: #231f20;
+      padding: 10px 15px 10px 15px;
+      font-size: 1rem;
+      font-family: 'clancy';
+    }
+    z-index: 2;
+  }
+}
+@media (max-width: 768px) {
+  .hero{
+    height: 50vh;
+  }
+  
+}
